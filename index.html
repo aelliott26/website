@@ -6,6 +6,14 @@
 </head>
 <body> 
     <h1>Alex Elliott's Homepage</h1>
+
+    <ol>
+    <li><a href="james.html"> This is my glorious kings page </a></li>
+    <li><a href="sandwiches.html"> This is my sandwiches page </a></li>
+    <li><a href="fruits.html"> This is my fruits review page </a></li>
+</ol>
+    <hr>
+    <h3>RAHHHH</h3>
     <style>
         body {
     margin: 40px;
@@ -20,14 +28,29 @@ h1 {
     text-align: center;
     font-style: italic;
 }
+h3 {
+    color: rgb(205, 137, 135);
+    background-color: #CDACA1;
+    font-style: italic;
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
 
-    </style>
-    <ol>
-    <li><a href="james.html"> This is my glorious kings page </a></li>
-    <li><a href="sandwiches.html"> This is my sandwiches page </a></li>
-    <li><a href="fruits.html"> This is my fruits review page </a></li>
-</ol>
-    <hr>
-    <b>RAHHHH</b>
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+
+ </style>
 </body>
 </html>
