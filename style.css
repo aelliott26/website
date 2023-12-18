@@ -1,0 +1,23 @@
+body {
+    margin: 40px;
+    color: #432534;
+    background-color: #EFD6AC;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+  h1 {
+    color: #432534;
+    background-color: #EFD6AC;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+  h3 {
+    color: #432534;
+    font-style: italic;
+    animation-duration: .0001s;
+    font-family: 'Times New Roman', Times, serif;
+    animation-iteration-count: infinite;
+  
+  }
