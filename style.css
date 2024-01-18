@@ -6,6 +6,9 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
   }
+  li {
+    text-align: left;
+  }
   h1 {
     color: #432534;
     background-color: #EFD6AC;
