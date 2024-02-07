@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <title>Personal Lab 7</title>
+        <link rel="Stylesheet" href="../style.css">
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script>
+          var sad = 1
             $(document).ready(function () {
                 $("#sad_face").click(function () {
                     drawSadFace();
+                    sadness();
                 });
                 $("#smiley_face").click(function () {
                     drawHappyFace();
@@ -22,15 +25,17 @@
                     ctx.beginPath();
                     ctx.lineWidth = 3;
                     ctx.fillStyle = "blue";
-                    ctx.arc(75, 75, 50, 0, Math.PI * 2, true); 
-                    ctx.fill();
-                    ctx.moveTo(110,75);
-                    ctx.arc(75, 75, 35, 0, Math.PI, false); 
-                    ctx.moveTo(65,65); 
-                    ctx.arc(60, 65, 5, 0, Math.PI * 2, true); 
-                    ctx.moveTo(95,65); 
-                    ctx.arc(90, 65, 5, 0, Math.PI * 2, true); 
-                    ctx.stroke();
+                  ctx.arc(75, 75, 50, 0, Math.PI * 2, true); 
+                  ctx.fill();
+                  ctx.moveTo(110,110);
+                  ctx.arc(75, 110, 35, 0, Math.PI, true); 
+                  ctx.moveTo(65,65); 
+                  ctx.arc(60, 65, 5, 0, Math.PI * 2, true); 
+                  ctx.moveTo(95,65); 
+                  ctx.arc(90, 65, 5, 0, Math.PI * 2, true); 
+                  ctx.stroke();
+                  sad += 1
+                  
                 }
             }
 
@@ -53,17 +58,25 @@
                     ctx.stroke();
                 }
             }
+          function sadness() {
+            if (sad == 5) {
+              $("#sad_face").show();
+              $("#smiley_face").hide();
+              let text = document.getElementById("sad")
+              text.innerHTML = "Why would you make him sad :(";
+            } 
+          }
         </script>
     </head>
     <body>
-        <h1>CIW Advanced HTML5 and CSS3 Specialist</h1>
-        <h2>Canvas Demonstration</h2>
+        <h1>Please keep him happy</h1>
+        <h2>His name is Bob</h2>
         <canvas id="canvas" width="200" height="200"></canvas>
         <script>
-            // Initial face
             drawHappyFace();
         </script>
         <button id="sad_face">Make him Sad</button>
         <button id="smiley_face">Make him Happy</button>
+      <h3 id="sad"></h3>
     </body>
 </html>
