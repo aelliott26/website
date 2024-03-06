@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../../style.css" />
+<title>Personal Lab</title>
+</head>
+<body>
+<section>
+<article>
+
+<h1>Numbers</h1>
+
+    <form>
+        <p>
+            <label for="tit">Title: </label>
+            <input list="titles" name="title" id="tit" />
+            <datalist id="titles">
+                <option value="Mr."> </option>
+                <option value="Mrs."> </option>
+                <option value="Ms."> </option>
+            </datalist>
+        </p>
+        <p>
+            <label for="second">Last name: </label>
+            <input required type="text" name="lastname" id="last" />
+        </p> 
+	    <fieldset name="input_one">
+        <legend>Addition:</legend>
+    <p>
+        <label for="third">First Input: </label>
+        <input required type="number" name="firstinput" id="first" />
+    </p>
+    <p>
+        <label for="last">Second Input: </label>
+        <input required type="number" name="lastinput" id="last" />
+    </p>
+	<button type="submit" formaction="confirmnumbs.html">Submit Form</button>
+	</fieldset>
+</form>
+
+</article> 
+
+</section> 
+
+</body>
+</html>

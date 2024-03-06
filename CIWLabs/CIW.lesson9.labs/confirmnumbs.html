@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation Page</title>
+    <link rel="Stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Confirmation Page</h1>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const firstname = urlParams.get('title')
+        const lastname = urlParams.get('lastname')
+        const firstInput = parseFloat(urlParams.get('firstinput'));
+        const lastInput = parseFloat(urlParams.get('lastinput'));
+        const sum = firstInput + lastInput;
+        document.write(`<p> Hello ${firstname} ${lastname}</p>`);
+        document.write(`<p>First Input: ${firstInput}</p>`);
+        document.write(`<p>Second Input: ${lastInput}</p>`);
+        document.write(`<p>Sum: ${sum}</p>`);
+    </script>
+</body>
+</html>
