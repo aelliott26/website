@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 90% 5%;
+    background-color: #f2e1c9;
+    font-family: "Times New Roman", Times, serif;
+  }
+  main {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  footer {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: #AAA;
+  }
+  footer>nav {
+    float: right;
+    height: 100%;
+  }
+  footer>nav>button {
+    font-size: x-large;
+    margin-right: 1vw;
+  }
+  section {
+    display: none;
+    font-size: 100%;
+    margin: 1%;
+  }
+  section>h2 {
+    color: #A6674C;
+    text-align: center;
+    font-size: 225%;
+  }
+  section>h3 {
+    color: #72604b;
+    text-align: center;
+    font-size: 2.8vw;
+  }
+  section>h4 {
+    color: #72604b;
+    text-align: center;
+    font-size: 2.8vw;
+  }
+  section>p {
+    color: #72604b;
+    font-size: 150%;
+  }
+  section>img {
+    text-align: center; 
+    width: 20%; 
+    height: auto; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  section>ul {
+    margin-left: .0001%;
+    color: #83673a;
+  }
+  section>ul>li {
+    margin-top: .0001%;
+    color: #83673a;
+  }
+  
+  section>ol {
+    margin-left: .0001%;
+    color: #83673a;
+  }
+  section>ol>li {
+    margin-top: .0001%;
+    color: #83673a;
+  }
+  
+  div.col2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    margin: -1vw 3vw 1vw 3vw;
+    color: #83673a;
+  }
+  a, a:visited {
+    text-decoration: none;
+  }
+  #noplan1, #noplan2, #noplan3, #noplan4, #noplan5 {
+    font-size: 4vw;
+    font-family: Ubuntu;
+    color: #00ABF0;
+    visibility: hidden;
+  }
+  #noplan5 {
+    color: red;
+  }
+  
